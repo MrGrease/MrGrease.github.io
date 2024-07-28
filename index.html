@@ -1,365 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-      integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Mehmet Emre Yorulmaz - Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
 
-  <body>
-    <div class="container">
-      <header id="main-header">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-md-5">
-            <img src="img/me.png" />
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="d-flex flex-column">
-              <div class="p-5 bg-dark text-white">
-                <div
-                  class="d-flex flex-row justify-content-between align-items-center"
-                >
-                  <h1 class="display-5">Mehmet Emre Yorulmaz</h1>
-                  <div>
-                    <a
-                      href="https://www.linkedin.com/in/mehmet-emre-yorulmaz-065a71185/"
-                      class="text-white"
-                    >
-                      <i class="fab fa-linkedin fa-2x mx-1"></i>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://github.com/MrGrease" class="text-white">
-                      <i class="fab fa-github  fa-2x mx-1"></i>
-                    </a>
-                  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Mehmet Emre Yorulmaz - Portfolio</title>
+</head>
+
+<body>
+  <div class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-5">
+          <img src="img/me.png" />
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="d-flex flex-column">
+            <div class="p-5 bg-dark text-white">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <h1 class="display-5">Mehmet Emre Yorulmaz</h1>
+                <div>
+                  <a href="https://www.linkedin.com/in/mehmet-emre-yorulmaz-065a71185/" class="text-white">
+                    <i class="fab fa-linkedin fa-2x mx-1"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://github.com/MrGrease" class="text-white">
+                    <i class="fab fa-github  fa-2x mx-1"></i>
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <div class="p-4 bg-black">
-                Professional Software Engineer / Başkent University Graduate / Ankara Turkey
-              </div>
+            <div class="p-4 bg-black">
+              Professional Software Engineer / Başkent University Graduate / Ankara Turkey
+            </div>
 
-              <div>
-                <div
-                  class="d-flex flex-row text-white align-items-stretch text-center"
-                >
-                  <div
-                    class="port-item p-4 bg-primary"
-                    data-toggle="collapse"
-                    data-target="#home"
-                  >
-                    <i class="fas fa-user fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">About</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-success"
-                    data-toggle="collapse"
-                    data-target="#resume"
-                  >
-                    <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Resume</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-warning"
-                    data-toggle="collapse"
-                    data-target="#work"
-                  >
-                    <i class="fas fa-folder-open fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Projects</span>
-                  </div>
-                  <div
-                    class="port-item p-4 bg-danger"
-                    data-toggle="collapse"
-                    data-target="#contact"
-                  >
-                    <i class="fas fa-envelope fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Contact</span>
-                  </div>
+            <div>
+              <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
+                  <i class="fas fa-user fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">About</span>
+                </div>
+                <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
+                  <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Resume</span>
+                </div>
+                <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
+                  <i class="fas fa-folder-open fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Projects</span>
+                </div>
+                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
+                  <i class="fas fa-envelope fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Contact</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!--Home-->
-      <div id="home" class="collapse show">
-        <div class="card card-body bg-primary text-white py-5">
-          <h2>About Me</h2>
-        </div>
-        <div class="card card-body py-5">
-          <p class="">
-            Ever since I learned Pascal in my 7th grade programming class in Sydney Australia I wanted to be a computer engineer...
-            <br><br>
-            Hi, I'm Emre and I'm a computer engineering graduate from Ankara, Turkey. I've spent most of my teenage years teaching myself how to code and worked on different projects ranging from video games to websites and animation. When I got into the Computer Engineering program at Başkent University in 2014, it felt like a continuation of my quest to unravel the mysteries of software development, rather than an entirely new experience.
-            <br><br> With the guidance of my professors and my determined attitude I refined and mastered and the skills I needed to become a professional software engineer. My flexibility and ability to teach myself helped me overcome many of the challenges I faced, and they are still the two major strengths I posses that I still rely on today. Whether I'm building a new game for people to enjoy or creating an android application to speed up a tedious task I'm always looking for new secrets I can discover.
-            <br><br>I've always worked on personal projects, even though I've released very few to the public, I've always loved the watching my ideas grow into something real. Throughout my University years I've worked on many video game projects one of which I released on the App-store and one of which I hope to release on Steam one day. Though I didn't limit myself to video games and have worked on many other types of projects including Android applications.
-            <br><br>When I'm not working, I'm usually trying to find new spots to skate in, ever since my sudden introduction to surfing in Australia I've been extremely interested in anything that counts as a "board", if you can stand on it odds are I can skate it. I've also been a guitarist for a while and was lucky enough to play with a few bands and of course, I play a metric ton of video games which is what got me into computers in the first place.
-            Currently I'm working on sharpening up my skills as I only recently finished my military service, and also looking for a team that can satisfy my desire to learn and grow.
-            <br><br>
-            So if you feel like you I'd make a good fit for your team feel free to get in touch. 
-          </p>
-          <br><br>
-          <h3>Skills</h3>
+    <!--Home-->
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>About Me</h2>
+      </div>
+      <div class="card card-body py-5">
+        <p class="">
+          Ever since I learned Pascal in my 7th grade programming class in Sydney Australia I wanted to be a computer
+          engineer...
           <br>
-          <h4>Programming Languages</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/c.svg" class="brand-icon"> C/C++</li>
-            <li class="list-group-item"><img src="img/java.svg" class="brand-icon"> Java</li>
-            <li class="list-group-item"><img src="img/python.svg" class="brand-icon"> Python</li>
-            <li class="list-group-item"><img src="img/javascript.svg" class="brand-icon"> Javascript</li>
-            <li class="list-group-item"><img src="img/csh.svg" class="brand-icon"> C#</li>
-            <li class="list-group-item"><img src="img/Matlab.svg" class="brand-icon-semi-horizontal"> Matlab</li>
-          </ul>
-          <h4>Frameworks</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/qt.svg" class="brand-icon"> QT</li>
-            <li class="list-group-item"><img src="img/net.svg" class="brand-icon"> .NET 6</li>
-            <li class="list-group-item"><img src="img/react.svg" class="brand-icon"> React</li>
-          </ul>
-          <h4>Mobile Application Development</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/android.svg" class="brand-icon"> Android</li>
-          </ul>
-          <h4>Databases</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/mongodb.svg" class="brand-icon-horizontal"> MongoDB</li>
-          </ul>
-          <h4>Web Development</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/html5.svg" class="brand-icon"> HTML</li>
-            <li class="list-group-item"><img src="img/css.svg" class="brand-icon"> CSS</li>
-            <li class="list-group-item"><img src="img/bootstrap.svg" class="brand-icon"> Bootstrap</li>
-            <li class="list-group-item"><img src="img/semanticui.svg" class="brand-icon"> Semantic UI</li>
-            <li class="list-group-item"><img src="img/jquery.svg" class="brand-icon-horizontal"> JQuery</li>
-            <li class="list-group-item"><img src="img/nodejs.svg" class="brand-icon-horizontal"> Node Js</li>
-            <li class="list-group-item"><img src="img/express.svg" class="brand-icon-horizontal"> ExpressJS</li>
-          </ul>
-          <h4>Version Control</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/git.png" class="brand-icon"> GIT</li>
-          </ul>
-          <h4>Game Engines</h4>
-          <ul class="list-group">
-            <li class="list-group-item"><img src="img/torque2d.png" class="brand-icon"> Torque 2D</li>
-            <li class="list-group-item"><img src="img/unity.svg" class="brand-icon"> Unity</li>
-            <li class="list-group-item"><img src="img/gamelooper.png" class="brand-icon"> GameLooper</li>
-            <li class="list-group-item"><img src="img/godot.svg" class="brand-icon"> GODOT</li>
-          </ul>
-          <hr />
-          
-        </div>
+          <br> Hi, I'm Emre and I'm a computer engineering graduate from Ankara, Turkey. I've spent most of my teenage
+          years teaching myself how to code and worked on different projects ranging from video games to websites and
+          animation. When I
+          got into the Computer Engineering program at Başkent University in 2014, it felt like a continuation of my
+          quest to unravel the mysteries of software development, rather than an entirely new experience.
+          <br>
+          <br> With the guidance of my professors and my determined attitude I refined and mastered and the skills I
+          needed to become a professional software engineer. My flexibility and ability to teach myself helped me
+          overcome many of the challenges
+          I faced, and they are still the two major strengths I posses that I still rely on today. Whether I'm building
+          a new game for people to enjoy or creating an android application to speed up a tedious task I'm always
+          looking for new secrets
+          I can discover.
+          <br>
+          <br>I've always worked on personal projects, even though I've released very few to the public, I've always
+          loved the watching my ideas grow into something real. Throughout my University years I've worked on many video
+          game projects one
+          of which I released on the App-store and one of which I hope to release on Steam one day. Though I didn't
+          limit myself to video games and have worked on many other types of projects including Android applications.
+          <br>
+          <br>When I'm not working, I'm usually trying to find new spots to skate in, ever since my sudden introduction
+          to surfing in Australia I've been extremely interested in anything that counts as a "board", if you can stand
+          on it odds are
+          I can skate it. I've also been a guitarist for a while and was lucky enough to play with a few bands and of
+          course, I play a metric ton of video games which is what got me into computers in the first place. Currently
+          I'm working on
+          sharpening up my skills as I only recently finished my military service, and also looking for a team that can
+          satisfy my desire to learn and grow.
+          <br>
+          <br> So if you feel like you I'd make a good fit for your team feel free to get in touch.
+        </p>
+        <br>
+        <br>
+        <h3>Skills</h3>
+        <br>
+        <h4 class="my-2">Programming Languages</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/c.svg" class="brand-icon"> <b>C/C++</b></li>
+          <li class="list-group-item"><img src="img/python.svg" class="brand-icon"> <b>Python</b></li>
+          <li class="list-group-item"><img src="img/javascript.svg" class="brand-icon"> <b>Javascript/Typescript</b>
+          </li>
+          <li class="list-group-item"><img src="img/csh.svg" class="brand-icon"> <b>C#</b></li>
+          <li class="list-group-item"><img src="img/go.svg" class="brand-icon"> <b>GO</b></li>
+        </ul>
+        <h4 class="my-2">Web Development</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/html5.svg" class="brand-icon"> <b>HTML</b></li>
+          <li class="list-group-item"><img src="img/css.svg" class="brand-icon"> <b>CSS</b></li>
+          <li class="list-group-item"><img src="img/bootstrap.svg" class="brand-icon"> <b>Bootstrap</b></li>
+          <li class="list-group-item"><img src="img/semanticui.svg" class="brand-icon"> <b>Semantic UI</b></li>
+          <li class="list-group-item"><img src="img/jquery.svg" class="brand-icon-horizontal"> <b>JQuery</b></li>
+          <li class="list-group-item"><img src="img/nodejs.svg" class="brand-icon-horizontal"> <b>Node Js</b></li>
+          <li class="list-group-item"><img src="img/express.svg" class="brand-icon-horizontal"> <b>ExpressJS</b></li>
+          <li class="list-group-item"><img src="img/react.svg" class="brand-icon"> <b>React</b></li>
+          <li class="list-group-item"><img src="img/nestjs.svg" class="brand-icon"> <b>NestJs</b></li>
+          <li class="list-group-item"><img src="img/redux.svg" class="brand-icon"> <b>Redux</b></li>
+          <li class="list-group-item"><img src="img/jest.svg" class="brand-icon"> <b>Jest</b></li>
+          <li class="list-group-item"><img src="img/vitest.svg" class="brand-icon"> <b>Vitest</b></li>
+          <li class="list-group-item"><img src="img/net.svg" class="brand-icon"> <b>.NET 6</b></li>
+        </ul>
+        <h4 class="my-2">Databases</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/sqlite.svg" class="brand-icon-horizontal"> <b>SQLite</b></li>
+          <li class="list-group-item"><img src="img/postgresql.svg" class="brand-icon-horizontal"> <b>Postgres</b></li>
+          <li class="list-group-item"><img src="img/mongodb.svg" class="brand-icon-horizontal"> <b>MongoDB</b></li>
+        </ul>
+        <h4 class="my-2">Cloud Platforms</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/gcp.svg" class="brand-icon"> <b>GCP</b></li>
+          <li class="list-group-item"><img src="img/aws.svg" class="brand-icon"> <b>AWS</b></li>
+        </ul>
+        <h4 class="my-2">Desktop Application Development</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/qt.svg" class="brand-icon"> <b>QT</b></li>
+          <li class="list-group-item"><img src="img/google.svg" class="brand-icon"> <b>GTest</b></li>
+          <li class="list-group-item"><img src="img/cmake.svg" class="brand-icon"> <b>Cmake</b></li>
+        </ul>
+        <h4 class="my-2">Game Engines</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/UnrealEngine.svg" class="brand-icon"> <b>Unreal Engine 3 4 5</b>
+          </li>
+          <li class="list-group-item"><img src="img/godot.svg" class="brand-icon"> <b>GODOT</b></li>
+          <li class="list-group-item"><img src="img/torque2d.png" class="brand-icon"> <b>Torque 2D</b></li>
+          <li class="list-group-item"><img src="img/unity.svg" class="brand-icon"> <b>Unity</b></li>
+          <li class="list-group-item"><img src="img/gamelooper.png" class="brand-icon"> <b>GameLooper</b></li>
+        </ul>
+        <h4 class="my-2">Version Control</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/git.png" class="brand-icon"> <b>GIT</b></li>
+          <li class="list-group-item"><img src="img/TortoiseSVN.svg" class="brand-icon"> <b>Tortoise SVN</b></li>
+        </ul>
+        <h4 class="my-2">Tools</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><img src="img/docker.svg" class="brand-icon"> <b>Docker</b></li>
+          <li class="list-group-item"><img src="img/rabbitmq.svg" class="brand-icon"> <b>RabbitMQ</b></li>
+        </ul>
+        <hr />
       </div>
-      <!--Resume-->
-      <div id="resume" class="collapse">
-        <div class="card card-body bg-success text-white py-5">
-          <h2>Resume</h2>
-        </div>
-        <div >
-          <embed id="retailbox"
-            src="https://mrgrease.github.io/pdf/Resume-MehmetEmreYorulmaz.pdf"
-            style="width:100%; height:1000px;"
-            frameborder="0"
-          ></embed>
-        </div>
+    </div>
+    <!--Resume-->
+    <div id="resume" class="collapse">
+      <div class="card card-body bg-success text-white py-5">
+        <h2>Resume</h2>
+      </div>
+      <div>
+        <embed id="retailbox" src="https://mrgrease.github.io/pdf/Resume-MehmetEmreYorulmaz.pdf"
+          style="width:100%; height:1000px;" frameborder="0"></embed>
+      </div>
+    </div>
+
+    <!--Work-->
+    <div id="work" class="collapse">
+      <div class="card card-body bg-warning text-white py-5">
+        <h2>Projects</h2>
+
       </div>
 
-      <!--Work-->
-      <div id="work" class="collapse">
-        <div class="card card-body bg-warning text-white py-5">
-          <h2>Projects</h2>
+      <div class="card card-body py-5">
+        <!--Row-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Firestorm <img src="img/UnrealEngine.svg" class="brand-icon-single"> </strong>
+              </div>
+              <img class="card-img-top p-2" src="img/Firestorm.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Firestorm : A game by Totemarts </h4>
+                <p class="card-text">A multiplayer fps made by the legendary video game development group Totem Arts</p>
+                <ul class="list-group my-2">
+                  <h4 class="my-2">Details</h4>
+                  <li class="list-group-item">• Participated in development and maintenance of core gameplay systems for the Unreal Engine 3 project Firestorm</li>
+                  <li class="list-group-item">• Refactored multiple gameplay systems to streamline their use with feedback from playtesters</li>
+                  <li class="list-group-item">• Developed anti-ddos software to protect dedicated game server instances with NodeJS, using the windows firewall
+                  api to dynamically create and remove rules according to the needs of the server instance.</li>
+                  <li class="list-group-item">• Developed UI with Adobe flash CS6 and Scaleform, using actionscript to control UI flow.</li>
+                  <li class="list-group-item">• Designed and developed an unrealscript UI framework from scratch, taking the canvas UI as a base. Creating
+                  buttons with multiple states, text lines that can be aligned both vertically and horizontally with dropshadows, with
+                  the option to use material instances as backgrounds or just effects.</li>
+                  <li class="list-group-item">• Project is still in development</li>
+                </ul>
+                <a href="https://totemarts.games/games/firestorm/" class="btn btn-warning mt-1 ">Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Game Statisic Registry Service <img src="img/go.svg" class="brand-icon-single"> </strong>
+              </div>
+              <img class="card-img-top p-2" src="img/statistics.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Game Statisic Registry Service </h4>
+                <p class="card-text">A full stack web application that can be retrofitted quickly to record stats for
+                  any video game sessions during or at the end of the game session. With a lightweight backend in Golang
+                  and a frontend in react. With multiple
+                  drivers for different databases. This project aims to be an open source alternative to professional
+                  game statistics and analytics tracking.
+                </p>
+                <a href="https://github.com/MrGrease/GameStatisticRegistryService/"
+                  class="btn btn-warning mt-1 ">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Soul Pumpkin <img src="img/godot.svg" class="brand-icon-single"> </strong>
+              </div>
+              <img class="card-img-top p-2" src="img/soulpumpkin.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Soul Pumpkin </h4>
+                <p class="card-text">Singleplayer Boomer shooter made for the GODOT WILD JAM gamejam within a week</p>
+                <ul class="list-group my-2">
+                  <h4 class="my-2">Details</h4>
+                  <li class="list-group-item">• Created entire game within a week </li>
+                  <li class="list-group-item">• Created Code, meshes, textures and levels with relevant tools</li>
+                  <li class="list-group-item">• Built game using gdscript specific design patterns that allows for reusability in future projects</li>
+                </ul>
+                <a href="https://mrgrease.itch.io/soulpumpkin/" class="btn btn-warning mt-1 ">Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Renegade X <img src="img/UnrealEngine.svg" class="brand-icon-single"> </strong>
+              </div>
+              <img class="card-img-top p-2" src="img/Renegade_X.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Renegade X </h4>
+                <p class="card-text">A multiplayer Remake of the third person shooter Renegade By EA games, made in
+                  cooperation with Totem Arts </p>
+                  <ul class="list-group my-2">
+                    <h4 class="my-2">Details</h4>
+                    <li class="list-group-item">• Fixed several bugs relating to multiplayer replication </li>
+                    <li class="list-group-item">• Created UI components with Autodesk Scaleform and Flash</li>
+                    <li class="list-group-item">• Created a reactive Autobalancing mechanism that reacts to changes in playercount score and great actions during gameplay sessions</li>
+                    <li class="list-group-item">• Finalized several incomplete features such as the incomplete UI, incomplete code features and etc</li>
+                  </ul>
+                <a href="https://totemarts.games/games/renegade-x/" class="btn btn-warning mt-1 ">Website</a>
+              </div>
+            </div>
+          </div>
 
-        </div>
-
-        <div class="card card-body py-5">
-          <!--Row-->
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <strong>Spriter <img src="img/react.svg" class="brand-icon"> <img src="img/nodejs.svg" class="brand-icon"> <img src="img/javascript.svg" class="brand-icon"></strong> 
-                </div>
-                <img class="card-img-top p-2" src="img/sprite.png" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Spriter: The Reference Image tool </h4>
-                  <p class="card-text">A full stack web application made with React and Node js, spriter aims to help its users look for and categorize reference images with ease.</p>
-                  <a href="https://github.com/MrGrease/Spriter" class="btn btn-warning mt-1 ">Github Project</a>
-                </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Guardian Whitelist <img src="img/nodejs.svg" class="brand-icon-single"> </strong>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <strong>Kanbanmate <img src="img/csh.svg" class="brand-icon"><img src="img/net.svg" class="brand-icon"> </strong> 
-                </div>
-                <img class="card-img-top p-2" src="img/kanban.jpeg" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Kanbanmate </h4>
-                  <p class="card-text">A fullstack trello clone .NETCORE application </p>
-                  <a href="https://github.com/MrGrease/KanbanMate" class="btn btn-warning mt-1 ">Github Project</a>
-                </div>
+              <img class="card-img-top p-2" src="img/firewall.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Guardian Whitelist</h4>
+                <p class="card-text">A nodejs app that dynamically sets windows firewall rules to enable and disable
+                  incoming udp requests from specific IP's, made to be used as plugin solution for DDOS defence.
+                  Currently in use by multiple games
+                </p>
+                <ul class="list-group my-2">
+                  <h4 class="my-2">Details</h4>
+                  <li class="list-group-item">• Client requested a solution to issues with DDOS attacks that could be quickly put into play without large scale modifications.</li>
+                  <li class="list-group-item">• Created a whitelist application that accepts requests from game sessions with relevant keys to authenticate.</li>
+                  <li class="list-group-item">• Allowed Authenticated clients to pass along UDP packets of data to game sessions by enabling and disabling windows firewall rules through its api.</li>
+                  <li class="list-group-item">• Obfuscated real ip of servers by placing whitelist between the server and the clients</li>
+                  <li class="list-group-item">• Currently in use by multiple game projects</li>
+                  <li class="list-group-item">• Code not public for security reasons</li>
+                </ul>
               </div>
             </div>
           </div>
-          <!--Row-->
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <strong>Audio Spectrum Visualizer <img src="img/python.svg" class="brand-icon"> </strong> 
-                </div>
-                <img class="card-img-top p-2" src="img/audio.png" alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Audio Spectrum </h4>
-                  <p class="card-text">A visualizer made with the movie.py python library that takes a audio input and converts it to a visual spectrum</p>
-                  <a href="https://github.com/MrGrease/AudioSpectrum" class="btn btn-warning mt-1 ">Github Project</a>
-                </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Spriter <img src="img/react.svg" class="brand-icon-single"> <img src="img/nodejs.svg"
+                    class="brand-icon-single"> <img src="img/javascript.svg" class="brand-icon-single"></strong>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header">
-                  <strong>Mesh slicer <img src="img/unity.svg" class="brand-icon"> <img src="img/csh.svg" class="brand-icon"></strong>
-                </div>
-                <img class="card-img-top p-2" src="img/slicer.jpg" width="500" height="400"  alt="">
-                <div class="card-body">
-                  <h4 class="card-title">Mesh Slicer </h4>
-                  <p class="card-text">A simple Implementation of the ezy slice library in the form of a Unity mobile game that allows the user to slice through various 3d objects.</p>
-                  <a href="https://github.com/MrGrease/Unity3d-MeshSlicer-Prototype" class="btn btn-warning mt-1 ">Unity Project</a>  
-                </div>
+              <img class="card-img-top p-2" src="img/sprite.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Spriter: The Reference Image tool </h4>
+                <p class="card-text">A full stack web application made with React and Node js, spriter aims to help its
+                  users look for and categorize reference images with ease.</p>
+                <a href="https://github.com/MrGrease/Spriter" class="btn btn-warning mt-1 ">Github Project</a>
               </div>
             </div>
           </div>
-      <!--Row-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <strong>Killer Rabbit <img src="img/godot.svg" class="brand-icon"></strong>
-            </div>
-            <img class="card-img-top" src="img/killerrabbit.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Killer Rabbit: Revived</h4>
-              <p class="card-text">Killer Rabbit is a top down action game where the player must help Steve the Rabbit through his intergalactic journey. Initially built in one week on the Gamelooper engine, Killer Rabbit: Revived is the GODOT version of the same game with a bit more polish.</p>
-              <a href="https://play.google.com/store/apps/details?id=org.godotengine.killerrabbit" class="btn btn-warning mt-1">Google Playstore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">
-             <strong>Quizard <img src="img/android.svg" class="brand-icon"> <img src="img/java.svg" class="brand-icon"></strong>
-            </div>
-            <img class="card-img-top" src="img/sc.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Quizard: The Quiz Wizard</h4>
-              <p class="card-text">Quizard is an Android app that lets you create, take and share quizes with ease. It also features local multiplayer so users can compete with their friends.</p>
-              <a href="https://play.google.com/store/apps/details?id=com.owlheadstudios.quizard" class="btn btn-warning mt-1">Google Playstore</a>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Audio Spectrum Visualizer <img src="img/python.svg" class="brand-icon-single"> </strong>
+              </div>
+              <img class="card-img-top p-2" src="img/audio.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Audio Spectrum </h4>
+                <p class="card-text">A visualizer made with the movie.py python library that takes a audio input and
+                  converts it to a visual spectrum</p>
+                <a href="https://github.com/MrGrease/AudioSpectrum" class="btn btn-warning mt-1 ">Github Project</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!--Row -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <strong>Colony / Swarm Optimization Algorithm Applications <img src="img/Matlab.svg" class="brand-icon"></strong>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Kanbanmate <img src="img/csh.svg" class="brand-icon-single"><img src="img/net.svg"
+                    class="brand-icon-single"> </strong>
+              </div>
+              <img class="card-img-top p-2" src="img/kanban.jpeg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Kanbanmate </h4>
+                <p class="card-text">A fullstack trello clone .NETCORE application </p>
+                <a href="https://github.com/MrGrease/KanbanMate" class="btn btn-warning mt-1 ">Github Project</a>
+              </div>
             </div>
-            <img class="card-img-top p-2" src="img/university.png" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Final Project: Colony / Swarm Optimization Algorithm Applications </h4>
-              <p class="card-text">This project presents and examines four different heuristic algorithms, applies them on four different problems, compares the results and also includes extensive performance testing to compare each algorithm against the others.</p>
-              <a href="https://play.google.com/store/apps/details?id=org.godotengine.killerrabbit" class="btn btn-warning mt-1 ">Article (Only Available in Turkish)</a>
-              <a href="https://github.com/MrGrease/Gray-Wolf-Optimizer-UCAV-Pathfinding" class="btn btn-warning mt-1">Matlab Implementation</a>
-              
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Mesh slicer <img src="img/unity.svg" class="brand-icon-single"> <img src="img/csh.svg"
+                    class="brand-icon-single"></strong>
+              </div>
+              <img class="card-img-top p-2" src="img/slicer.jpg" width="500" height="400" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Mesh Slicer </h4>
+                <p class="card-text">A simple Implementation of the ezy slice library in the form of a Unity mobile game
+                  that allows the user to slice through various 3d objects.</p>
+                <a href="https://github.com/MrGrease/Unity3d-MeshSlicer-Prototype" class="btn btn-warning mt-1 ">Unity
+                  Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Killer Rabbit <img src="img/godot.svg" class="brand-icon-single"></strong>
+              </div>
+              <img class="card-img-top" src="img/killerrabbit.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Killer Rabbit: Revived</h4>
+                <p class="card-text">Killer Rabbit is a top down action game where the player must help Steve the Rabbit
+                  through his intergalactic journey. Initially built in one week on the Gamelooper engine, Killer
+                  Rabbit: Revived is the GODOT version of
+                  the same game with a bit more polish.</p>
+                <a href="https://play.google.com/store/apps/details?id=org.godotengine.killerrabbit"
+                  class="btn btn-warning mt-1">Google Playstore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Quizard <img src="img/android.svg" class="brand-icon-single"> <img src="img/java.svg"
+                    class="brand-icon-single"></strong>
+              </div>
+              <img class="card-img-top" src="img/sc.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Quizard: The Quiz Wizard</h4>
+                <p class="card-text">Quizard is an Android app that lets you create, take and share quizes with ease. It
+                  also features local multiplayer so users can compete with their friends.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.owlheadstudios.quizard"
+                  class="btn btn-warning mt-1">Google Playstore</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <strong>Colony / Swarm Optimization Algorithm Applications <img src="img/Matlab.svg"
+                    class="brand-icon-single"></strong>
+              </div>
+              <img class="card-img-top p-2" src="img/university.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Final Project: Colony / Swarm Optimization Algorithm Applications </h4>
+                <p class="card-text">This project presents and examines four different heuristic algorithms, applies
+                  them on four different problems, compares the results and also includes extensive performance testing
+                  to compare each algorithm against the
+                  others.</p>
+                <a href="https://play.google.com/store/apps/details?id=org.godotengine.killerrabbit"
+                  class="btn btn-warning mt-1 ">Article (Only Available in Turkish)</a>
+                <a href="https://github.com/MrGrease/Gray-Wolf-Optimizer-UCAV-Pathfinding"
+                  class="btn btn-warning mt-1">Matlab Implementation</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!--Contact-->
+    <div id="contact" class="collapse">
+      <div class="card card-body bg-danger text-white py-5">
+        <h2>Contact</h2>
+        <p class="lead">
+          Feel Free To Get In Touch
+        </p>
+      </div>
+      <div class="card card-body py-5">
+        <p class="d-inline display-5"><strong>Email : </strong>mehmetemreyorulmaz@gmail.com</h3>
+        <p class="d-inline display-5"><strong>Phone : </strong>+90 507 981 37 90</h3>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://mrgrease.github.io/pdf/Resume-MehmetEmreYorulmaz.pdf"
+            download="Mehmet Emre Yorulmaz - Resume" class="btn btn-outline-light">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </footer>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+  <script>
+    $('.port-item').click(function () {
+      $('.collapse').collapse('hide');
+    });
 
+    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+      e.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+</body>
 
-
-      <!--Contact-->
-      <div id="contact" class="collapse">
-        <div class="card card-body bg-danger text-white py-5">
-          <h2>Contact</h2>
-          <p class="lead">
-            Feel Free To Get In Touch
-          </p>
-        </div>
-        <div class="card card-body py-5">
-          <p class="d-inline display-5"><strong>Email : </strong>mehmetemreyorulmaz@gmail.com</h3>
-            <p class="d-inline display-5"><strong>Phone : </strong>+90 507 981 37 90</h3>  
-        </div>
-      </div>
-
-      <!--Footer-->
-      <footer id="main-footer" class="p-5 bg-dark text-white">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="https://mrgrease.github.io/pdf/Resume-MehmetEmreYorulmaz.pdf" download="Mehmet Emre Yorulmaz - Resume" class="btn btn-outline-light">
-              <i class="fas fa-download"></i> Download Resume
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-      integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $('.port-item').click(function() {
-        $('.collapse').collapse('hide');
-      });
-
-      $(document).on('click', '[data-toggle="lightbox"]', function(e) {
-        e.preventDefault();
-        $(this).ekkoLightbox();
-      });
-    </script>
-  </body>
 </html>

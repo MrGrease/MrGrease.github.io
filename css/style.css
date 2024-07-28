@@ -42,6 +42,12 @@ iframe {
 .brand-icon {
   height: 35px;
   width: 35px;
+  margin-right: 20px;
+}
+
+.brand-icon-single {
+  height: 35px;
+  width: 35px;
 }
 
 .brand-icon-horizontal {
@@ -52,4 +58,8 @@ iframe {
 .brand-icon-semi-horizontal {
   height: 35px;
   width: 45px;
+}
+
+.card-img-top{
+  height: auto;
 }
